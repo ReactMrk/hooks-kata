@@ -1,11 +1,14 @@
 import './App.css';
-import CustomerManagement from "./customer/CustomerManagement";
+import CustomerManagement from './customer/CustomerManagement';
+import { CustomerProvider } from './customer/CustomerContext';
 
 const App = () => {
   return (
     <div className="container">
       <h1>Customer Management System</h1>
-      <CustomerManagement />
+      <CustomerProvider>
+        <CustomerManagement />
+      </CustomerProvider>
     </div>
   )
 };

@@ -3,8 +3,8 @@ import { CustomerContext } from './CustomerContext';
 import Alert from './Alert';
 import useAlert from './hooks/useAlert';
 
-const CustomerList = ({ setHomeAlertText, setHomeAlertVisible }) => {
-  const { customers } = useContext(CustomerContext);
+const CustomerList = () => {
+  const { customers, setHomeAlertText, setHomeAlertVisible  } = useContext(CustomerContext);
   const displayAlert = useAlert();
 
   const showHomeAlert = (timeout, text)=> {
