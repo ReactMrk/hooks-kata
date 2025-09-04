@@ -17,3 +17,15 @@ First suggestion is about new customer alert. In the future, this alert will be 
 ## Exercise 2
 Customer Management System is intended to be a large application, so in the future new react components related with customers will be added. Variables customer and setCustomer will be the parameters for these new react components. In order to avoid these variables being passed again and again from parent to children, principal engineer suggested you to create a context.
 
+
+### 💡 Hints Exercise 1
+- Create a folder `hooks/` and a new file `useAlert.js`.
+- Move the alert logic (state + effect) from `CustomerList` into this hook into `hooks/useAlert.js`.
+- Return the alert state from the hook and use it inside `CustomerList`.
+
+### 💡 Hints Exercise 2
+- Work into `CustomerContext.js` file.
+- Use `createContext` and `useState` to hold `customers` and `setCustomers`.
+- Wrap your app with `CustomerProvider` so every component has access to the context.
+- Replace props (`customers`, `setCustomers`) with `useContext(CustomerContext)` inside `CustomerForm` and `CustomerList`.
+  
