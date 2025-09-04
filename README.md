@@ -11,6 +11,8 @@ Run app: **npm run dev**
 
 **Info:** it's not a problem if customers are lost when website is reloaded because in the future an API will be used to get them.
 
+![Demo](https://github.com/ReactMrk/hooks-kata/blob/main/assets/demo.gif?raw=true)
+
 ## Exercise 1
 First suggestion is about new customer alert. In the future, this alert will be reused on other components. In order to avoid duplicating the useEffect, that handle this alert, in the future, could you refactor it to be a custom hook?
 
