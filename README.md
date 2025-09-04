@@ -19,7 +19,7 @@ Customer Management System is intended to be a large application, so in the futu
 
 
 ### 💡 Hints Exercise 1
-- Create a folder `hooks/` and a new file `useAlert.js`.
+- Work into `hooks/useAlert.js` file.
 - Move the alert logic (state + effect) from `CustomerList` into this hook into `hooks/useAlert.js`.
 - Return the alert state from the hook and use it inside `CustomerList`.
 
